@@ -47,66 +47,66 @@
         <section class="section entry">
             <div class="entry__container">
                 <h1 class="entry__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button type="button" class="pointer2 button-main2" data-modal-open>Zamów usługe</button>
+                <button type="button" class="pointer modal__button--open" data-modal-open>Zamów usługe</button>
             </div>
             <div class="backdrop is__hidden" data-modal>
                 <div class="modal">
-                    <button type="button" class="close-modal-button" data-modal-close>
+                    <button type="button" class="modal__button--close" data-modal-close>
                         <svg width="30" height="30">
                             <use href="./images/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
                     <div>
-                        <form class="modal-form">
-                            <h4 class="heading-modal">Zostaw swoje dane w formularzu poniżej</h4>
-                            <div class="label-container">
-                                <label class="form-label">
-                                    <span class="label-head-text">Imie</span>
+                        <form class="modal__form">
+                            <h4 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h4>
+                            <div class="form">
+                                <label class="form__label">
+                                    <span class="form__text">Imie</span>
                                     <input 
                                         type="text" 
-                                        class="form-input" 
+                                        class="form__input" 
                                         id="name" 
                                         name="Imie" 
                                         placeholder="" />
-                                    <svg class="form-label-icon" width="12px" height="12px">
+                                    <svg class="form__icons" width="12px" height="12px">
                                         <use href="./images/name.svg#icon-name"></use>
                                     </svg>
                                 </label>
                             </div>    
                             
-                            <div class="label-container">
-                                <label class="form-label">
-                                    <span class="label-head-text">Telefon</span>
+                            <div class="form">
+                                <label class="form__label">
+                                    <span class="form__text">Telefon</span>
                                     <input 
                                         type="telephone" 
-                                        class="form-input" 
+                                        class="form__input" 
                                         id="telephone"
                                         name="Telefon kontaktowy" 
                                         placeholder="" />
-                                    <svg class="form-label-icon" width="13px" height="13px">
+                                    <svg class="form__icons" width="13px" height="13px">
                                         <use href="./images/telephone.svg#icon-phone-black-18dp-1"></use>
                                     </svg>
                                 </label>
                             </div>
 
-                            <div class="label-container">
-                                <label class="form-label">
-                                    <span class="label-head-text">Email</span>
+                            <div class="form">
+                                <label class="form__label">
+                                    <span class="form__text">Email</span>
                                     <input 
                                         type="email" 
-                                        class="form-input" 
+                                        class="form__input" 
                                         id="email"
                                         name="Adres email" 
                                         placeholder="" />
-                                    <svg class="form-label-icon" width="15px" height="12px">
+                                    <svg class="form__icons" width="15px" height="12px">
                                         <use href="./images/email.svg#icon-email-black-18dp-1"></use>
                                     </svg>
                                 </label>
                             </div>
                             
-                            <div class="label-container">
-                                <label class="form-label-text">
-                                    <span class="label-head-text">Komentarz</span>
+                            <div class="form">
+                                <label class="form__label--text">
+                                    <span class="form__text">Komentarz</span>
                                     <textarea 
                                         class="textarea" 
                                         rows="5" 
@@ -116,15 +116,15 @@
                                 </label>
                             </div>
                             
-                            <div class="label-container">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" class="checkbox-input" name="Zgoda"/>
-                                    <span class="checkbox-text">Oświadczam iż akceptuje 
-                                        <a class="link-checkbox" href="#">Regulamin</a> i 
-                                        <a class="link-checkbox" href="#">Politykę Prywatności.</a>
+                            <div class="form">
+                                <label class="checkbox__label">
+                                    <input type="checkbox" class="checkbox__input" name="Zgoda"/>
+                                    <span class="checkbox__text">Oświadczam iż akceptuje 
+                                        <a class="checkbox__link" href="#">Regulamin</a> i 
+                                        <a class="checkbox__link" href="#">Politykę Prywatności.</a>
                                     </span>
                                 </label>
-                                <button class="form-button form-button-text" type="submit">Wyślij</button>
+                                <button class="form__button form__button--text" type="submit">Wyślij</button>
                             </div>
                         </form>
                     </div>
