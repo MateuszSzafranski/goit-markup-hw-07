@@ -1,0 +1,25 @@
+.product {
+    background-color: var(--brand-color-white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--brand-color-black);
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: var(--brand-color-text-grey);
+    }
+}
