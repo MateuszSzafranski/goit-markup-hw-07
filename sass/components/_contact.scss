@@ -19,48 +19,4 @@
             color: $brand-color-blue
         }
     }
-    &__mail-link {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.02em;
-        color: var(--brand-color-text-grey);
-        margin-right: 30px;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: color;
-  
-    }
-    &__tel {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        fill: var(--brand-color-text-grey);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__phone-link {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.02em;
-        color: var(--brand-color-text-grey);
-        margin-right: 30px;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: color;
-    }
-    &__phone {
-        margin-right: 0px;
-    }
-}
-
-.contact__mail:hover,
-.contact__mail:focus,
-.contact__tel:hover,
-.contact__tel:focus {
-    fill: var(--brand-color-blue);
-    cursor: pointer;
 }

@@ -1,9 +1,7 @@
 .clients {
     background-color: var(--brand-color-white);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
     &__title {
-        font-style: normal;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
@@ -28,13 +26,11 @@
         align-items: center;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: border-color, fill;
-    }
-}
+        transition-property: border, fill;
 
-.clients__icons:hover,
-.clients__icons:focus {
-    fill: var(--brand-color-blue);
-    cursor: pointer;
-    border: 1px solid var(--brand-color-blue);
+        &:is(:hover, :focus) {
+                fill: $brand-color-blue;
+                border: 1px solid $brand-color-blue;
+            }
+    }
 }
