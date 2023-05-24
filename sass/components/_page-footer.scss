@@ -5,6 +5,7 @@
     justify-content: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
+
     &__footer {
         display: flex;
         align-items: center;
@@ -58,7 +59,12 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: color;
-    }
+
+        &:is(:hover, :focus) {
+            color: var(--brand-color-blue);
+            }
+        }
+    
     &__pack {
         display: flex;
         justify-content: center;
@@ -96,6 +102,11 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: background-color;
+
+        &:is(:hover, :focus) {
+            background-color: var(--brand-color-blue);
+            cursor: pointer;
+        }
     }
     &__news {
         font-style: normal;
@@ -151,13 +162,4 @@
     }
 }
 
-.contact:hover,
-.contact:focus {
-    color: var(--brand-color-blue);
-}
 
-.footer__icons:hover,
-.footer__icons:focus {
-    background: var(--brand-color-blue);
-    cursor: pointer;
-}

@@ -10,24 +10,22 @@
         flex-basis: calc((100% - 20px) / 4);
     }
     &__box {
-        background: var(--brand-color-grey);
+        background: $brand-color-grey;
         border-radius: 4px;
         margin-bottom: 30px;
         padding-top: 25px;
         padding-bottom: 25px;
     }
     &__title {
-        font-style: normal;
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
         margin-bottom: 10px;
     }
     &__text {
-        font-style: normal;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--brand-color-text-grey);
+        color: $brand-color-text-grey;
     }
 }

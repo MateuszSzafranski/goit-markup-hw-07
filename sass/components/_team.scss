@@ -1,6 +1,6 @@
 .team {
     background-color: var(--brand-color-grey);
-    padding: 94px 94px;
+    
     &__title {
         font-style: normal;
         font-size: 36px;
@@ -60,13 +60,12 @@
         transition-property: color, background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
 
-.team__icons:hover,
-.team__icons:focus {
-    fill: var(--brand-color-white);
-    background-color: var(--brand-color-blue);
-    border-radius: 50%;
-    cursor: pointer;
+        &:is(:hover, :focus) {
+                fill: var(--brand-color-white);
+                background-color: var(--brand-color-blue);
+                border-radius: 50%;
+                cursor: pointer;
+            }
+    }
 }
