@@ -1,7 +1,8 @@
 .team {
-    background-color: var(--brand-color-grey);
+    background-color: $brand-color-grey;
     font-family: 'Roboto';
     font-style: normal;
+    padding: 94px 94px;
 
     &__title {
         font-style: normal;
@@ -22,7 +23,7 @@
         display: block;
     }
     &__box {
-        background-color: var(--brand-color-white);
+        background-color: $brand-color-white;
         text-align: center;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -41,7 +42,7 @@
         font-size: 16px;
         line-height: 1.18x;
         letter-spacing: 0.03em;
-        color: var(--brand-color-text-grey);
+        color: $brand-color-text-grey;
     }
     &__group {
         display: flex;
@@ -64,8 +65,8 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:is(:hover, :focus) {
-                fill: var(--brand-color-white);
-                background: var(--brand-color-blue);
+                fill: $brand-color-white;
+                background: $brand-color-blue;
                 border-radius: 50%;
                 cursor: pointer;
             }
