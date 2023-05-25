@@ -29,16 +29,16 @@
                     color: $brand-color-blue;
                     position: relative;
 
-                    &navigation__active-line::after{
-                        content: "";
-                        display: inline-block;
-                        width: 100%;
-                        left: 0;
-                        margin-top: 45px;
-                        position: absolute;
-                        border-bottom: solid 4px $brand-color-blue;
-                        border-radius: 2px;
-                    }
+                    &navigation__active-line::after {
+                            content: "";
+                            display: inline-block;
+                            width: 100%;
+                            left: 0;
+                            margin-top: 45px;
+                            position: absolute;
+                            border-bottom: solid 4px $brand-color-blue;
+                            border-radius: 2px;
+                        }
                 }
 
         &:is(:hover, :focus) {
