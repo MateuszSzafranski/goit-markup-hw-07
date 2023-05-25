@@ -7,19 +7,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    &__button-close {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        fill: var(--brand-color-black);
-        display: flex;
-        border-radius: 50%;
-        padding: 6px;
-        cursor: pointer;
-        background: var(--brand-color-white);
-        border: 1px solid rgba(0, 0, 0, 0.1);
-
-    }
+    
 
     &__title {
         width: 448px;
@@ -81,8 +69,7 @@
         position: absolute;
         width: 18px;
         height: 18px;
-        left: 10px;
-        top: 30px;
+        
         margin-top: 4px;
         transition-property: border-color, fill;
         transition-duration: 250ms;
@@ -131,10 +118,10 @@
                 fill: $brand-color-blue;
             }
 
-                &__textarea {
-                    border: none;
-                    outline: none;
-                }
+        &__textarea {
+                border: none;
+                outline: none;
+            }
 
         
     }
@@ -164,9 +151,18 @@
     fill: $brand-color-blue;
 }
 
+.button-close {
+   
+    top: 8px;
+    right: 8px;
+    fill: var(--brand-color-black);
+    display: flex;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    background: var(--brand-color-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
-
-.modal__textarea {
-    border: none;
-    outline: none;
 }
+
+
