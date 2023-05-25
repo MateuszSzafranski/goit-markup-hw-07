@@ -15,11 +15,11 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--brand-color-black);
+        color: $brand-color-black;
         flex-direction: row;
         margin-right: 93px;
     }
-    &__logo-text {
+    &__text {
         text-decoration: none;
     }
     &__logo {
@@ -29,6 +29,6 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--brand-color-blue);
+        color: $brand-color-blue;
     }
 }
