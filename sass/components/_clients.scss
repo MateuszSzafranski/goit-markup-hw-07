@@ -1,6 +1,7 @@
 .clients {
-    background-color: var(--brand-color-white);
+    background-color: $brand-color-white;
     padding-bottom: 94px;
+    font-family: 'Roboto';
     
     &__title {
         font-size: 36px;

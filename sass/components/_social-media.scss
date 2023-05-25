@@ -1,0 +1,54 @@
+.social-media {
+    background-color: $brand-color-background;
+    color: $brand-color-white;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        &__pack {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        &__title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $brand-color-white;
+            }
+
+        &__list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                fill: $brand-color-white;
+                margin-top: 20px;
+                list-style: none;
+                gap: 10px;
+                }
+
+                &__icons {
+                    background: rgba(255, 255, 255, 0.1);
+                    width: 44px;
+                    height: 44px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    transition-property: background-color;
+        
+                    &:is(:hover, :focus) {
+                        background-color: $brand-color-blue;
+                        cursor: pointer;
+                    }
+                }
+}
