@@ -55,89 +55,6 @@
                 <button type="button" class="hero__button" data-modal-open>Zamów usługe</button>
             </div>
         </section>
-            <div class="entry__backdrop entry__is-hidden" data-modal>
-                <div class="entry__modal-button">
-                    <button type="button" class="entry__button-close" data-modal-close>
-                        <svg width="30" height="30">
-                            <use href="./images/symbol-defs.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                    <div>
-                        <form class="modal">
-                            <h4 class="modal__title">Zostaw swoje dane w formularzu poniżej</h4>
-                            <div class="modal__form">
-                                <label class="modal__label">
-                                    <span class="modal__text">Imie</span>
-                                    <input 
-                                        type="text" 
-                                        class="modal__input" 
-                                        id="name" 
-                                        name="Imie" 
-                                        placeholder="" />
-                                    <svg class="modal__icons" width="12px" height="12px">
-                                        <use href="./images/name.svg#icon-name"></use>
-                                    </svg>
-                                </label>
-                            </div>    
-                            
-                            <div class="modal__form">
-                                <label class="modal__label">
-                                    <span class="modal__text">Telefon</span>
-                                    <input 
-                                        type="telephone" 
-                                        class="modal__input" 
-                                        id="telephone"
-                                        name="Telefon kontaktowy" 
-                                        placeholder="" />
-                                    <svg class="modal__icons" width="13px" height="13px">
-                                        <use href="./images/telephone.svg#icon-phone-black-18dp-1"></use>
-                                    </svg>
-                                </label>
-                            </div>
-
-                            <div class="modal__form">
-                                <label class="modal__label">
-                                    <span class="modal__text">Email</span>
-                                    <input 
-                                        type="email" 
-                                        class="modal__input" 
-                                        id="email"
-                                        name="Adres email" 
-                                        placeholder="" />
-                                    <svg class="modal__icons" width="15px" height="12px">
-                                        <use href="./images/email.svg#icon-email-black-18dp-1"></use>
-                                    </svg>
-                                </label>
-                            </div>
-                            
-                            <div class="modal__form">
-                                <label class="modal__label-text">
-                                    <span class="modal__text">Komentarz</span>
-                                    <textarea 
-                                        class="modal__textarea" 
-                                        rows="5" 
-                                        style="resize: none;" 
-                                        name="Pole na wprowadzenie tekstu" 
-                                        placeholder="Wprowadź tekst"></textarea>
-                                </label>
-                            </div>
-                            
-                            <div class="checbox">
-                                <label class="checkbox__label">
-                                    <input type="checkbox" class="checkbox__input" name="Zgoda"/>
-                                    <span class="checkbox__text">Oświadczam iż akceptuje 
-                                        <a class="checkbox__link" href="#">Regulamin</a> i 
-                                        <a class="checkbox__link" href="#">Politykę Prywatności.</a>
-                                    </span>
-                                </label>
-                                <button class="checkbox__button checkbox__button-text" type="submit">Wyślij</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
 
         <!-- Lorem Ipsum -->
         <section class="section">
@@ -478,6 +395,62 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal__button-close" data-modal-close>
+                <svg width="30" height="30">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+    
+            <form class="modal__form">
+                <h4 class="modal__title">Zostaw swoje dane w formularzu poniżej</h4>
+    
+                <label class="modal__label">
+                    <span class="modal__text">Imie</span>
+                    <input type="text" class="modal__input" id="name" name="Imie" placeholder="" />
+                    <svg class="modal__icons" width="12px" height="12px">
+                        <use href="./images/name.svg#icon-name"></use>
+                    </svg>
+                </label>
+
+                <label class="modal__label">
+                    <span class="modal__text">Telefon</span>
+                    <input type="telephone" class="modal__input" id="telephone" name="Telefon kontaktowy" placeholder="" />
+                    <svg class="modal__icons" width="13px" height="13px">
+                        <use href="./images/telephone.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                </label>
+
+                <label class="modal__label">
+                    <span class="modal__text">Email</span>
+                    <input type="email" class="modal__input" id="email" name="Adres email" placeholder="" />
+                    <svg class="modal__icons" width="15px" height="12px">
+                        <use href="./images/email.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                </label>
+
+                <label class="modal__label-text">
+                    <span class="modal__text">Komentarz</span>
+                    <textarea class="modal__textarea" rows="5" style="resize: none;" name="Pole na wprowadzenie tekstu"
+                        placeholder="Wprowadź tekst"></textarea>
+                </label>
+
+                <div class="checbox">
+                    <label class="checkbox__label">
+                        <input type="checkbox" class="checkbox__input" name="Zgoda" />
+                        <span class="checkbox__text">Oświadczam iż akceptuje
+                            <a class="checkbox__link" href="#">Regulamin</a> i
+                            <a class="checkbox__link" href="#">Politykę Prywatności.</a>
+                        </span>
+                    </label>
+                    <button class="checkbox__button checkbox__button-text" type="submit">Wyślij</button>
+                </div>
+                
+            </form>
+        </div> 
+    </div> 
 
     <script src="./js/modal.js"></script>
 </body>

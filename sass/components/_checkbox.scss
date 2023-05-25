@@ -8,7 +8,7 @@
     }
     &__input {
         margin-right: 7px;
-        background: var(--brand-color-black);
+        background: $brand-color-black;
         border-radius: 4px;
     }
     &__text {
@@ -17,15 +17,15 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--brand-color-text-grey);
+        color: $brand-color-text-grey;
     }
     &__link {
-        color: var(--brand-color-blue);
+        color: $brand-color-blue;
     }
     &__button {
         width: 200px;
         height: 50px;
-        background: var(--brand-color-blue);
+        background: $brand-color-blue;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: none;
@@ -43,6 +43,6 @@
         line-height: 1.87;
         text-align: center;
         letter-spacing: 0.06em;
-        color: var(--brand-color-white);
+        color: $brand-color-white;
     }
 }

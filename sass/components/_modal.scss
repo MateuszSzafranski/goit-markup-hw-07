@@ -1,5 +1,7 @@
 .modal {
+    font-family: 'Roboto';
     padding: 40px;
+
     &__title {
         width: 448px;
         height: 23px;
@@ -11,7 +13,7 @@
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--brand-color-black);
+        color: $brand-color-black;
     }
     &__form {
         position: relative;
@@ -34,7 +36,7 @@
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
-        color: var(--brand-color-text-grey);
+        color: $brand-color-text-grey;
     }
     &__input {
         box-sizing: border-box;
@@ -51,6 +53,10 @@
         transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:is(:hover, :focus-within) {
+                border: 1px solid $brand-color-blue;
+            }
     }
     &__icons {
         position: absolute;
@@ -62,6 +68,7 @@
         transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
     &__label-text {
         box-sizing: border-box;
         width: 448px;
@@ -90,28 +97,25 @@
         transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:is(:hover, :focus-within) {
+                border: 1px solid $brand-color-blue;
+            }
+        &:is(:hover, :focus) {
+                fill: $brand-color-blue;
+            }
+
+        
     }
 }
 
-.modal__input:hover,
-.modal__input:focus-within {
-    border: 1px solid #2196f3;
-}
 
 .modal__input:hover+.form-label-icon,
 .modal__input:focus+.form-label-icon {
-    fill: #2196f3;
+    fill: $brand-color-blue;
 }
 
-.modal__textarea:hover,
-.modal__textarea:focus-within {
-    border: 1px solid #2196f3;
-}
 
-.modal__textarea:hover,
-.modal__textarea:focus {
-    fill: #2196f3;
-}
 
 .modal__textarea {
     border: none;
