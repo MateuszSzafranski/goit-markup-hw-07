@@ -19,7 +19,7 @@
         }
     
     &__input:is(:hover, :focus)+.modal__icons {
-            fill: blue;
+            fill: $brand-color-blue;
         }
 
     &__button-close {
