@@ -19,7 +19,7 @@
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.02em;
-            color: var(--brand-color-black);
+            color: $brand-color-black;
             text-decoration: none;
             margin-right: 46px;
             transition-duration: 250ms;
@@ -27,17 +27,17 @@
             transition-property: color;
 
             &__active-line {
-                    color: var(--brand-color-blue);
+                    color: $brand-color-blue;
                     position: relative;
 
-                    &__navigation__active-line::after{
+                    &navigation__active-line::after{
                         content: "";
                         display: inline-block;
                         width: 100%;
                         left: 0;
                         margin-top: 45px;
                         position: absolute;
-                        border-bottom: solid 4px var(--brand-color-blue);
+                        border-bottom: solid 4px $brand-color-blue;
                         border-radius: 2px;
                     }
                 }
