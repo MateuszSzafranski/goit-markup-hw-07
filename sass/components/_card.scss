@@ -1,5 +1,6 @@
 .card {
     width: 370px;
+
     &__container {
         display: block;
         object-fit: cover;
@@ -23,6 +24,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: transform;
+       
     }
     &__text {
         font-style: normal;
