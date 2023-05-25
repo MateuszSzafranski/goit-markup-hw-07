@@ -76,6 +76,9 @@
         &:is(:hover, :focus-within) {
                 border: 1px solid $brand-color-blue;
             }
+        &:is(:hover, :focus) {
+                fill: $brand-color-blue;
+            }
     }
     &__icons {
         position: absolute;
@@ -85,6 +88,10 @@
         transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:is(:hover, :focus) {
+            fill: $brand-color-blue;
+        }
     }
 
     &__label-text {
@@ -157,10 +164,7 @@
 }
 
 
-.modal__input:hover+.form-label-icon,
-.modal__input:focus+.form-label-icon {
-    fill: $brand-color-blue;
-}
+
 
 .button-close {
    
