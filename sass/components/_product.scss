@@ -1,5 +1,5 @@
 .product {
-    background-color: var(--brand-color-white);
+    background-color: $brand-color-white;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -12,13 +12,13 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: var(--brand-color-black);
+        color: $brand-color-black;
     }
     &__text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.03em;
-        color: var(--brand-color-text-grey);
+        color: $brand-color-text-grey;
     }
 }

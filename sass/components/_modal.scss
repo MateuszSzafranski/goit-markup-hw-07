@@ -1,10 +1,11 @@
 .modal {
-    font-family: 'Roboto';
     padding: 40px;
-    width: 528px;
+    width: 100%;
+    max-width: 528px;
+    position: relative;
     height: 581px;
-    background: $brand-color-white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .12), 0px 1px 1px rgba(0, 0, 0, .14), 0px 2px 1px rgba(0, 0, 0, .2);
     border-radius: 4px;
 
     &__button-close {
@@ -166,18 +167,17 @@
 
 
 
-.button-close {
-   
-    top: 8px;
+.modal__button-close {
+    position: absolute;
     right: 8px;
-    fill: var(--brand-color-black);
+    top: 8px;
+    fill: #212121;
     display: flex;
     border-radius: 50%;
-    padding: 6px;
+    padding: 4px;
     cursor: pointer;
-    background: var(--brand-color-white);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 
