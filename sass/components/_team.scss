@@ -1,6 +1,8 @@
 .team {
     background-color: var(--brand-color-grey);
-    
+    font-family: 'Roboto';
+    font-style: normal;
+
     &__title {
         font-style: normal;
         font-size: 36px;
@@ -57,13 +59,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition-property: color, background-color;
+        transition-property: fill, background-color, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:is(:hover, :focus) {
                 fill: var(--brand-color-white);
-                background-color: var(--brand-color-blue);
+                background: var(--brand-color-blue);
                 border-radius: 50%;
                 cursor: pointer;
             }

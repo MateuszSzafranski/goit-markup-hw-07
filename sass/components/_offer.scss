@@ -1,6 +1,7 @@
 .offer {
     background-color: var(--brand-color-white);
-    padding-bottom: 94px;
+    font-family: 'Roboto';
+    font-style: normal;
 
     &__title {
         font-style: normal;
@@ -9,7 +10,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 50px;
-        color: white;
+        color: black;
     }
     &__list {
         list-style: none;

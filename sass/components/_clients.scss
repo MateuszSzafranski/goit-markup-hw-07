@@ -1,5 +1,6 @@
 .clients {
     background-color: var(--brand-color-white);
+    padding-bottom: 94px;
     
     &__title {
         font-size: 36px;
@@ -31,6 +32,7 @@
         &:is(:hover, :focus) {
                 fill: $brand-color-blue;
                 border: 1px solid $brand-color-blue;
+                cursor: pointer;
             }
     }
 }
