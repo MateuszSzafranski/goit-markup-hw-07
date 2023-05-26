@@ -4,9 +4,18 @@
     max-width: 528px;
     position: relative;
     height: 581px;
-    background: #fff;
+    background: $brand-color-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, .12), 0px 1px 1px rgba(0, 0, 0, .14), 0px 2px 1px rgba(0, 0, 0, .2);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    is-hidden {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition-delay: 400ms;
+            }
 
     &__input-wrapper {
             position: relative;
@@ -29,11 +38,11 @@
             fill: $brand-color-black;
             display: flex;
             border-radius: 50%;
-            padding: 6px;
             cursor: pointer;
             background: $brand-color-white;
             border: 1px solid rgba(0, 0, 0, 0.1);
-    
+            justify-content: center;
+            align-items: center;
         }
 
     &__title {
@@ -158,6 +167,7 @@
 
         
     }
+
 }
 .backdrop {
     position: fixed;
@@ -172,6 +182,7 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    transition-delay: 400ms;
 }
 
 .is-hidden .modal {
