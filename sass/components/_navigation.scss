@@ -25,28 +25,24 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: color;
 
-            &__active-line {
-                    color: $brand-color-blue;
-                    position: relative;
-
-                    
-                }
-
         &:is(:hover, :focus) {
             color: $brand-color-blue
         }
     }
 }
 
-.navigation__active-line::after {
+.navigation__link--active::after {
     content: "";
-    display: inline-block;
-    width: 100%;
-    left: 0;
-    margin-top: 45px;
     position: absolute;
-    border-bottom: solid 4px $brand-color-blue;
-    border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $brand-color-blue;
+    top: 45px;
 }
 
+.navigation__link--active {
+    position: relative;
+    color: $brand-color-blue;
+}
 
