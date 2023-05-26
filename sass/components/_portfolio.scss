@@ -1,7 +1,6 @@
 .portfolio {
-    background-color: var(--brand-color-white);
+    background-color: $brand-color-white;
     padding-bottom: 94px;
-    padding-top: 50px;
     
     &__list {
         align-items: center;
