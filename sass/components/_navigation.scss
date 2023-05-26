@@ -10,6 +10,7 @@
         display: flex;
         list-style: none;
         text-decoration: none;
+        gap: 60px;
     }
     
     &__link {
@@ -20,7 +21,6 @@
         letter-spacing: 0.02em;
         color: $brand-color-black;
         text-decoration: none;
-        margin-right: 46px;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: color;
